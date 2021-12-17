@@ -9,14 +9,69 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="mystyle.css" rel="stylesheet">
     <title>Document</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      input[type=email], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      input[type=tel], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      input[type=submit] {
+        background-color: #109796;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        float: left;
+      }
+
+      input[type=submit]:hover {
+        background-color: #107796;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: lightgrey;
+        padding: 40px;
+      }
+
+    </style>
 </head>
+
 <body>
     <!-- START NAVIGATION BAR -->
 
 <nav class="navbar navbar-expand-sm bg-light navbar-light ">
     <a class="navbar-brand" href="#">Logo</a>
   <div class="container-fluid justify-content-left">
-    
+
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="#">Ποιοί Είμαστε</a>
@@ -32,6 +87,36 @@
 </nav>
 
     <!-- END OF NAVIGATION BAR -->
-    
+
+    <!--  START OF EMAILFORM -->
+
+    <div class="container">
+      <h3> Κλείστε Ραντεβού </h3>
+      <form class="" action="index.html" method="GET">
+        <div class="form-group">
+          <label for="txtFirstName">Όνομα:</label>
+          <input type="text" id="txtFirstName" name="firstName" minlenght="4" maxlength="15" placeholder="Όνομα*" required>
+        </div>
+        <div class="form-group">
+          <label for="txtLastName">Επώνυμο:</label>
+          <input type="text" id="txtLastName" name="lastName" minlenght="4" maxlength="15" placeholder="Επώνυμο*" required>
+        </div>
+        <div class="form-group">
+          <label for="txtEmail">E-mail:</label>
+          <input type="email" id="txtEmail" name="email" placeholder="Email*" required>
+        </div>
+        <div class="form-group">
+          <label for="txtTel">Τηλέφωνο:</label>
+          <input type="tel" id="txtTel" name="Τηλέφωνο" placeholder="Τηλέφωνο">
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="submit" name="Αποστολή" value="Αποστολή">
+        </div>
+      </form>
+    </div>
+
+    <!-- END OF EMAILFORM -->
+
 </body>
 </html>
