@@ -4,7 +4,17 @@ html{
 
 nav{
     background-color: #eee;
-
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 2rem 2rem;
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+#logo{
+  padding-left: 0.75rem;
 }
 nav a{
     color: #109796;
@@ -15,17 +25,21 @@ nav a:hover{
 }
 
 .carousel{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-inline: 0.75rem;
-    background-color: #efefef;
+  /* margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-inline: 0.75rem;
+  background-color: #efefef; */
+  padding-bottom: 0.5rem;
 }
 
 .carousel-inner img {
-    width: 100%;
-    height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: 700px;
+    
   }
 
 * {
