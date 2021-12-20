@@ -5,6 +5,9 @@ html{
   li{
     display:none;
   }
+  #logo{
+    display: none;
+}
 }
 
 nav{
