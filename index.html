@@ -7,11 +7,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3cbcc35af1.js" crossorigin="anonymous"></script>
     <link href="mystyle.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body class="page-top">
+<body id="page-top">
+
+<button onclick="ToTop()" id="scrolltotop" type="button" class="btn btn=secondary btn-square-sm"></button>
 
     <!-- START NAVIGATION BAR -->
 <nav class="navbar fixed-top navbar-expand-sm scrolling-navbar" id="navbar">
@@ -44,21 +47,21 @@
       </ul>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="C:\Users\Tzelos\Desktop\michailidiswebsite\test.jpg" alt="Los Angeles" width="1100" height="500">
+          <img src="images/test.jpg" alt="Los Angeles" width="1100" height="500">
           <div class="carousel-caption">
             <h3>Heading1</h3>
             <p>something more specific</p>
           </div>   
         </div>
         <div class="carousel-item">
-          <img src="C:\Users\Tzelos\Desktop\michailidiswebsite\test.jpg" alt="Chicago" width="1100" height="500">
+          <img src="images/test.jpg" alt="Chicago" width="1100" height="500">
           <div class="carousel-caption">
             <h3>Heading2</h3>
             <p>something more specific</p>
           </div>   
         </div>
         <div class="carousel-item">
-          <img src="C:\Users\Tzelos\Desktop\michailidiswebsite\test.jpg" alt="New York" width="1100" height="500">
+          <img src="images/test.jpg" alt="New York" width="1100" height="500">
           <div class="carousel-caption">
             <h3>Heading3</h3>
             <p>something more specific</p>
@@ -75,6 +78,34 @@
   </div>
 
     <!--  END OF CAROUSEL -->
+    
+
+    <!--  START OF SERVICES SECTOR -->
+
+    <div class="services" id="services">
+
+      <div class="row justify-content-md-center">
+        <div class="col-md-3">
+          <i class='fas fa-user-shield' style='font-size:64px;color:rgb(0, 162, 255);border-radius: 50%;background-color: lightgrey;'></i>
+          <h2>Heading1</h2>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          
+          <h2>Heading2</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          
+          <h2>Heading3</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+      </div><!-- /.row -->
+
+    <!--  END OF SERVICES SECTOR -->
 
     <!--  START OF EMAILFORM -->
 
@@ -114,7 +145,7 @@
   window.onscroll = function() {scrollFunction()};
   
   function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
       document.getElementById("navbar").style.padding = "0.125rem 0.125rem";
       document.getElementById("navbar").style.fontSize = "0.85rem";
       document.getElementById("logo").style.paddingLeft = "0.75rem";
