@@ -12,7 +12,9 @@
     <title>Document</title>
 </head>
 
-<body class="page-top">
+<body id="page-top">
+
+<button onclick="ToTop()" id="scrolltotop" type="button" class="btn btn=secondary btn-square-sm"></button>
 
     <!-- START NAVIGATION BAR -->
 <nav class="navbar fixed-top navbar-expand-sm scrolling-navbar" id="navbar">
@@ -80,7 +82,7 @@
 
     <!--  START OF SERVICES SECTOR -->
 
-    <div class="services">
+    <div class="services" id="services">
 
       <div class="row justify-content-md-center">
         <div class="col-md-3">
@@ -143,7 +145,7 @@
   window.onscroll = function() {scrollFunction()};
   
   function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
       document.getElementById("navbar").style.padding = "0.125rem 0.125rem";
       document.getElementById("navbar").style.fontSize = "0.85rem";
       document.getElementById("logo").style.paddingLeft = "0.75rem";
