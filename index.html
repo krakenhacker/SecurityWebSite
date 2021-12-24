@@ -9,12 +9,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/3cbcc35af1.js" crossorigin="anonymous"></script>
     <link href="mystyle.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <title>Document</title>
 </head>
 
 <body id="page-top">
 
-<button onclick="ToTop()" id="scrolltotop" type="button" class="btn btn=secondary btn-square-sm"></button>
+<a onclick="OnClick(0)"  id="scrolltotop" type="button" class="btn btn=secondary btn-square-sm"><i class="	fas fa-long-arrow-alt-up" style="color: #10979794;;font-size: 36px;padding-top: 0.3rem ;"></i></a>
 
     <!-- START NAVIGATION BAR -->
 <nav class="navbar fixed-top navbar-expand-sm scrolling-navbar" id="navbar">
@@ -23,13 +25,13 @@
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#aboutus">Ποιοί Είμαστε</a>
+        <a  class="nav-link" href="#aboutus">Ποιοί Είμαστε</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#services">Υπηρεσίες</a>
+        <a  class="nav-link" href="#services">Υπηρεσίες</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Επικοινωνία</a>
+        <a  class="nav-link" href="#contact">Επικοινωνία</a>
       </li>
     </ul>
   </div>
@@ -139,21 +141,3 @@
 
 </body>
 </html>
-
-<script>
-  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-      document.getElementById("navbar").style.padding = "0.125rem 0.125rem";
-      document.getElementById("navbar").style.fontSize = "0.85rem";
-      document.getElementById("logo").style.paddingLeft = "0.75rem";
-    } else {
-       document.getElementById("navbar").style.paddingLeft = "1rem";
-       document.getElementById("navbar").style.paddingTop = "0.5rem";
-       document.getElementById("navbar").style.paddingBottom = "0.5rem";
-       document.getElementById("navbar").style.fontSize = "1rem";
-    }
-  }
-  </script>
