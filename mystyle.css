@@ -56,7 +56,7 @@ nav a{
 }
 nav a:hover{
     color: #107796;
-    
+
 }
 .col-md-3{
   text-align: center;
@@ -65,11 +65,13 @@ nav a:hover{
   margin: 0.5rem;
   transition: 0.5s;
   transition-delay: 0.1s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .col-md-3:hover{
   background-color: #1097972d;
   border-radius: 0.5rem;
 }
+
 
 .carousel{
   /* margin-top: 0.5rem;
@@ -86,7 +88,7 @@ nav a:hover{
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   width: 100%;
   height: 700px;
-    
+
   }
 
 * {
@@ -126,7 +128,7 @@ nav a:hover{
     background-color: #109796;
     color: white;
     padding: 12px 20px;
-    border: none;
+    border: 1px solid black;
     border-radius: 4px;
     float: left;
   }
@@ -136,7 +138,10 @@ nav a:hover{
   }
 
   .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 5px;
     background-color: lightgrey;
     padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
