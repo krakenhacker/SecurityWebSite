@@ -113,7 +113,7 @@
       <span id="contact"></span>
     <div class="container">
       <h3> Κλείστε Ραντεβού </h3>
-      <form class="" action="/sumbit_form.php" method="GET">
+      <form class="" action="/sumbit_form.php" id="contact-form" method="GET">
         <div class="form-group">
           <label for="txtFirstName">Όνομα:</label>
           <input type="text" id="txtFirstName" name="firstName" minlenght="4" maxlength="15" placeholder="Όνομα*" required>
@@ -136,7 +136,7 @@
         </div>
         <label for="select">Επιθυμητές ώρες επικοινωνίας:</label>
         <div class="form-select">
-        <select class="form-select" required>
+        <select class="form-select" name="time" form="contact-form" required>
           <option value="" disabled selected>επιλογή ώρας*</option>
           <option value="proi">9:00-12:00</option>
           <option value="mesimeri">12:00-14:00</option>
@@ -145,7 +145,7 @@
         </div>
         <br>
         <div class="form-group">
-          <input type="submit" name="sumbit" value="Αποστολή">
+          <input type="submit" name="sumbit" value="sumbit">
         </div>
       </form>
     </div>
