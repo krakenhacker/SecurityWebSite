@@ -36,9 +36,8 @@ html::-webkit-scrollbar{
 }
 
 nav{
-    background-color: #eee;
+    background-image: linear-gradient(to right,#052630de, #10779600);
     overflow: hidden;
-    background-color: #f1f1f1;
     padding: 2rem 2rem;
     transition: 0.5s;
     position: fixed;
@@ -56,7 +55,6 @@ nav a{
 }
 nav a:hover{
     color: #107796;
-
 }
 .col-md-3{
   text-align: center;
@@ -66,7 +64,7 @@ nav a:hover{
   margin-top: 2.5rem;
   transition: 0.3s;
   transition-delay: 0.1s;
-  border: 2px solid rgba(211, 211, 211, 0.219);
+  border: 1px solid rgba(211, 211, 211, 0.219);
 }
 .col-md-3:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -118,10 +116,10 @@ nav a:hover{
     border-radius: 4px;
     resize: vertical;
   }
-
+  
   label {
     padding: 12px 12px 12px 0;
-    display: inline-block;
+    display:table-column-group;
   }
 
   input[type=submit] {
@@ -135,6 +133,9 @@ nav a:hover{
 
   input[type=submit]:hover {
     background-color: #107796;
+  }
+  textarea[name=comment]{
+    resize: none;
   }
 
   .container {

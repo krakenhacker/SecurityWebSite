@@ -49,21 +49,21 @@
       </ul>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/test.jpg" alt="Los Angeles" width="1100" height="500">
+          <img src="images/brandexp-arlo-brandlandingpage-featurebanner-s.jpeg" alt="Los Angeles" width="1100" height="500">
           <div class="carousel-caption">
-            <h3>Heading1</h3>
+            <h3>ΚΑΜΕΡΕΣ</h3>
+            <p>Παρακολούθησε τον χώρο σου και το βράδυ!</p>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="images/scott-webb-yekGLpc3vro-unsplash.jpg" alt="Chicago" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>ΣΥΣΤΗΜΑΤΑ ΕΞΩΤΕΡΙΚΟΥ ΧΩΡΟΥ</h3>
             <p>something more specific</p>
           </div>   
         </div>
         <div class="carousel-item">
-          <img src="images/test.jpg" alt="Chicago" width="1100" height="500">
-          <div class="carousel-caption">
-            <h3>Heading2</h3>
-            <p>something more specific</p>
-          </div>   
-        </div>
-        <div class="carousel-item">
-          <img src="images/test.jpg" alt="New York" width="1100" height="500">
+          <img src="images/7075115.jpg" alt="New York" width="1100" height="500">
           <div class="carousel-caption">
             <h3>Heading3</h3>
             <p>something more specific</p>
@@ -88,19 +88,19 @@
 
       <div class="row justify-content-md-center">
         <div class="col-md-3">
-          <i class='fas fa-user-shield' style='font-size:64px;color:rgb(0, 162, 255);border-radius: 50%;background-color: lightgrey;'></i>
+          <i class='fas fa-user-shield' style='font-size:64px;color:#107796;'></i>
           <h2>Heading1</h2>
           <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
           <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div>
         <div class="col-md-3">
-          
+          <i class='fas fa-key' style='font-size:64px;color:#107796;'></i>
           <h2>Heading2</h2>
           <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
           <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div>
         <div class="col-md-3">
-          
+          <i class='fas fa-fingerprint' style='font-size:64px;color:#107796;'></i>
           <h2>Heading3</h2>
           <p>And lastly this, the third column of representative placeholder content.</p>
           <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
@@ -112,15 +112,15 @@
     <!--  START OF EMAILFORM -->
       <span id="contact"></span>
     <div class="container">
-      <h3> Κλείστε Ραντεβού </h3>
-      <form class="" action="sumbit_form.php" method="GET">
+      <h3> Ζητήστε Προσφορά </h3>
+      <form class="" action="/sumbit_form.php" id="contact-form" method="GET">
         <div class="form-group">
           <label for="txtFirstName">Όνομα:</label>
-          <input type="text" id="txtFirstName" name="firstName" minlenght="4" maxlength="15" placeholder="Όνομα*" required>
+          <input type="text" id="txtFirstName" name="firstName" minlenght="4" maxlength="18" placeholder="Όνομα*" required>
         </div>
         <div class="form-group">
           <label for="txtLastName">Επώνυμο:</label>
-          <input type="text" id="txtLastName" name="lastName" minlenght="4" maxlength="15" placeholder="Επώνυμο*" required>
+          <input type="text" id="txtLastName" name="lastName" minlenght="4" maxlength="18" placeholder="Επώνυμο*" required>
         </div>
         <div class="form-group">
           <label for="txtEmail">E-mail:</label>
@@ -128,11 +128,24 @@
         </div>
         <div class="form-group">
           <label for="txtTel">Τηλέφωνο:</label>
-          <input type="tel" id="txtTel" name="Τηλέφωνο" placeholder="Τηλέφωνο">
+          <input type="tel" id="txtTel" name="phoneNumber" placeholder="Τηλέφωνο*" required>
+        </div>
+        <div class="form-group">
+          <label for="txtMessage">Αφήστε το μήνυμα σας:</label>
+          <textarea rows="4" name="comment" id="message" placeholder="Μήνυμα"></textarea>
+        </div>
+        <label for="select">Επιθυμητές ώρες επικοινωνίας:</label>
+        <div class="form-select">
+        <select class="form-select" name="time" form="contact-form" required>
+          <option value="" disabled selected>επιλογή ώρας επικοινωνίας*</option>
+          <option value="9:00-12:00">9:00-12:00</option>
+          <option value="12:00-14:00">12:00-14:00</option>
+          <option value="18:00-21:00">18:00-21:00</option>
+        </select>
         </div>
         <br>
         <div class="form-group">
-          <input type="submit" name="Αποστολή" value="Αποστολή">
+          <input type="submit" name="sumbit" value="Αποστολή">
         </div>
       </form>
     </div>
