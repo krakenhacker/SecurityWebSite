@@ -36,7 +36,7 @@ html::-webkit-scrollbar{
 }
 
 nav{
-    background-image: linear-gradient(to right,#052630d3, #10779600);
+    background-image: linear-gradient(to right,#052630de, #10779600);
     overflow: hidden;
     padding: 2rem 2rem;
     transition: 0.5s;
@@ -133,6 +133,9 @@ nav a:hover{
 
   input[type=submit]:hover {
     background-color: #107796;
+  }
+  textarea[name=comment]{
+    resize: none;
   }
 
   .container {
