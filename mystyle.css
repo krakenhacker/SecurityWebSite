@@ -36,9 +36,8 @@ html::-webkit-scrollbar{
 }
 
 nav{
-    background-color: #eee;
+    background-image: linear-gradient(to right,#052630d3, #10779600);
     overflow: hidden;
-    background-color: #f1f1f1;
     padding: 2rem 2rem;
     transition: 0.5s;
     position: fixed;
