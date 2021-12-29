@@ -1,5 +1,4 @@
 <?php
-header("Refresh:5; url=register.php"); 
 if(isset($_GET['submit'])){
     $to = "george.sot@windowslive.com"; // this is your Email address
     $from = $_GET['email']; // this is the sender's Email address
@@ -18,6 +17,7 @@ if(isset($_GET['submit'])){
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    header("Refresh:5; url=index.html"); 
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
