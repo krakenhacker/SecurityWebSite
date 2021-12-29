@@ -121,7 +121,7 @@ nav a:hover{
   
   label {
     padding: 12px 12px 12px 0;
-    display: inline-block;
+    display:table-column-group;
   }
 
   input[type=submit] {
