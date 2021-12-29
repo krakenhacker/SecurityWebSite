@@ -8,7 +8,7 @@
     $time = $_GET['time'];
     $subject = "Alarm Systems";
     $subject2 = "Alarm Systems - Αντιγραφο";
-    $message = $firstName . " " . $lastName . " " . $phoneNumber . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:" . $time;
+    $message = $firstName . " " . $lastName . "τηλέφωνο: " . $phoneNumber . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:" . $time;
     $message2 = "Αντίγραφο του e-mail σας" . $firstName . " " . $lastName . " " . $phoneNumber . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:" . $time;
 
     $headers = "From:" . $from;
