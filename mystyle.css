@@ -17,10 +17,11 @@ html::-webkit-scrollbar{
   }
   #logo{
     display: none;
+  }
+
 }
-p,h3{
+h3{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
 }
 #scrolltotop{
   background-color: #e6e6e6;
@@ -108,7 +109,9 @@ nav a:hover{
   /* border-radius: 0.5rem; */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   width: 100%;
-  height: 700px;
+  height: auto;
+  min-height: 400px;
+  max-height: 800px;
 
   }
 
