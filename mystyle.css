@@ -121,7 +121,7 @@ nav a:hover{
   }
   .footercontainer{
     background-image: linear-gradient(to top,#000000, #031318cb);
-    padding: 2rem;
+    padding-top: 2rem;
   }
   .footercontainer .col-md-6,.footercontainer .col-md-6 p{
     text-align: center;
@@ -140,6 +140,17 @@ nav a:hover{
     width: 190px;
     margin-bottom: 2rem;
   }
+  #copyright {
+    background-color: black;
+    position: static;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+  }
+
 
 * {
     box-sizing: border-box;
@@ -198,3 +209,4 @@ nav a:hover{
     padding: 40px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
+
