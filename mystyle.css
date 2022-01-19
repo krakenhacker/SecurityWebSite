@@ -119,6 +119,21 @@ nav a:hover{
   max-height: 800px;
 
   }
+  .footercontainer{
+    background-image: linear-gradient(to top,#000000, #031318cb);
+    padding: 2rem;
+  }
+  .footercontainer .col-md-6,.footercontainer .col-md-6 p{
+    text-align: center;
+    color: whitesmoke;
+    background-image: url("images\map_footer.png");
+
+  }
+  
+  #footerlogo{
+    width: 190px;
+    margin-bottom: 2rem;
+  }
 
 * {
     box-sizing: border-box;
