@@ -22,7 +22,8 @@ body{overflow-x: hidden;}
 
 }
 #logoimg{
-  width: 100px;
+  transition: 0.5s;
+  width: 140px;
 }
 h3{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
