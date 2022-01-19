@@ -16,10 +16,13 @@ body{overflow-x: hidden;}
   li{
     display:none;
   }
-  #logo{
+  #logoimg{
     display: none;
   }
 
+}
+#logoimg{
+  width: 100px;
 }
 h3{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
