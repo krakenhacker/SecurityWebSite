@@ -120,8 +120,8 @@ nav a:hover{
 
   }
   .footercontainer{
-    background-image: linear-gradient(to top,#000000, #031318cb);
-    padding-top: 2rem;
+    background-image: linear-gradient(to top,#000000, #05242ed3);
+    padding-top: 1rem;
   }
   .footercontainer .col-md-6,.footercontainer .col-md-6 p{
     text-align: center;
@@ -138,7 +138,7 @@ nav a:hover{
   
   #footerlogo{
     width: 190px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   #copyright {
     background-color: black;
