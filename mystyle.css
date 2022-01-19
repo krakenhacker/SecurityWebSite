@@ -126,8 +126,14 @@ nav a:hover{
   .footercontainer .col-md-6,.footercontainer .col-md-6 p{
     text-align: center;
     color: whitesmoke;
-    background-image: url("images\map_footer.png");
 
+  }
+  #mapfooter{
+    background-image: url(images/map_footer.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    position: relative;
+    background-position: center center;
   }
   
   #footerlogo{
