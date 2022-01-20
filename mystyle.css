@@ -78,7 +78,7 @@ nav a:hover{
   padding-bottom: 1rem; */
   text-align: center;
 }
-.col-md-3{
+.services .col-md-3{
   text-align: center;
   /* background-color: #f1f1f1; */
   border-radius: 0.5rem;
@@ -88,11 +88,11 @@ nav a:hover{
   transition-delay: 0.1s;
   border: 1px solid rgba(211, 211, 211, 0.219);
 }
-.col-md-3:hover{
+.services .col-md-3:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   background-color: rgba(255, 255, 255, 0.774);
 }
-.col-md-3 i{
+.services .col-md-3 i{
   border-radius: 50%;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.192);
@@ -107,7 +107,7 @@ nav a:hover{
   padding-bottom: 0.5rem;
   padding-inline: 0.75rem;
   background-color: #efefef; */
-  padding-bottom: 0.5rem;
+  /* padding-bottom: 0.5rem; */
 }
 
 .carousel-inner img {
@@ -117,6 +117,18 @@ nav a:hover{
   height: auto;
   min-height: 400px;
   max-height: 800px;
+  }
+  .about-us{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url(images/smarthome3.jpg);
+    background-attachment: fixed;
+  }
+  .about-us p{
+    color: white;
+    background-color: #052630de;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   .footercontainer{
     background-image: linear-gradient(to top,#000000, #05242ed3);
