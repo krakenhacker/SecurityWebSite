@@ -107,7 +107,7 @@ nav a:hover{
   padding-bottom: 0.5rem;
   padding-inline: 0.75rem;
   background-color: #efefef; */
-  /* padding-bottom: 0.5rem; */
+  padding-bottom: 0.25rem;
 }
 
 .carousel-inner img {
@@ -119,6 +119,7 @@ nav a:hover{
   max-height: 800px;
   }
   .about-us{
+    margin-bottom: 0.5rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-image: url(images/smarthome3.jpg);
