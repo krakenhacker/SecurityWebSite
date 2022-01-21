@@ -266,7 +266,7 @@ nav a:hover{
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 60%;
+    width: 70%;
   }
   .slider::before, .slider::after {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
