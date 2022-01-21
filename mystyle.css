@@ -122,14 +122,26 @@ nav a:hover{
     margin-bottom: 0.5rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-image: url(images/smarthome3.jpg);
+    background-image: url(images/Ajax-website-Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  .about-us p{
+  /* .about-us .col-lg-8{
+    background-color: #05263091;
+        box-shadow: rgba(87, 53, 3, 0.39) 0px 22px 70px 4px;
+  } */
+  .about-us .col-lg-7{
+    font-size: 18px;
+    background-color: #1a1f2091;
     color: white;
-    background-color: #052630de;
+    border-radius: 1%;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(87, 53, 3, 0.39) 0px 22px 70px 4px;
+  }
+  .about-us h1{
+    font-size: 50px;
+    color: rgba(34, 23, 0, 0.938);
   }
   .footercontainer{
     background-image: linear-gradient(to top,#000000, #05242ed3);
@@ -220,5 +232,8 @@ nav a:hover{
     background-color: lightgrey;
     padding: 40px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .container h3{
+    font-size: 40px;
   }
 
