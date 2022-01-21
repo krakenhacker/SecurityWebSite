@@ -16,7 +16,7 @@
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     // echo "Mail Sent. Thank you " . $firstName . ", we will contact you shortly.";
-    // header("Refresh:5; url=index.html"); 
+     header("Refresh:10; url=index.html"); 
     // You can also use header('Location: thank_you.php'); to redirect to another page.
 ?>
 <html lang="en">
