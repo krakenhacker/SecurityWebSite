@@ -266,7 +266,7 @@ nav a:hover{
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 80%;
+    width: 60%;
   }
   .slider::before, .slider::after {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
@@ -287,8 +287,8 @@ nav a:hover{
     top: 0;
   }
   .slider .slide-track {
-    -webkit-animation: scroll 15s linear infinite;
-            animation: scroll 15s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+            animation: scroll 30s linear infinite;
     display: flex;
     width: calc(250px * 14);
   }
