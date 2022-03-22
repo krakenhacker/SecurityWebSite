@@ -5,7 +5,13 @@ html{
 html::-webkit-scrollbar{
   display: none;
 }
-body{overflow-x: hidden;}
+body{
+  overflow-x: hidden;
+  background-image: url(images/Ajax-website-Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 @media screen and (max-width: 1350px){
   #scrolltotop{
@@ -87,7 +93,7 @@ nav a:hover{
   max-height: 750px;
   object-fit: cover;
 }
-.firstbanner button{
+.carousel button{
  padding: 1.3em 3em;
  font-size: 12px;
  text-transform: uppercase;
@@ -102,7 +108,7 @@ nav a:hover{
  cursor: pointer;
  outline: none;
 }
-.firstbanner  button:hover{
+.carousel  button:hover{
   background-color: #2EE59D;
  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
  color: #fff;
@@ -112,7 +118,7 @@ nav a:hover{
 #services{
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   background-color: #f1f1f1;
 }
 #services h1{
@@ -144,7 +150,9 @@ nav a:hover{
   padding: 1rem;
 }
 
-
+#bgcarousel{
+  background-image: linear-gradient(to bottom,#05242e70, rgba(255, 255, 255, 0.534));
+}
 .carousel{
   /* margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -153,6 +161,11 @@ nav a:hover{
   padding-inline: 0.75rem;
   background-color: #efefef; */
   padding-bottom: 0.25rem;
+  width: 90%;
+  left: 5%;
+  padding-top: 2.5rem;
+
+
 }
 
 .carousel-inner img {
@@ -162,15 +175,16 @@ nav a:hover{
   height: auto;
   min-height: 400px;
   max-height: 800px;
+  /* border-left: #0000004f 2px solid;
+  border-right: #0000004f 2px solid; */
   }
   .about-us{
-    margin-bottom: 0.5rem;
     padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-image: url(images/Ajax-website-Banner.png);
-    background-size: cover;
+    padding-bottom: 3.5rem;
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-image: linear-gradient(to top,#05242e70, rgba(255, 255, 255, 0.534));
   }
   /* .about-us .col-lg-8{
     background-color: #05263091;
@@ -272,10 +286,11 @@ nav a:hover{
 
   #contact{
     background-image: linear-gradient(to bottom,#05242e70, white);
+    padding-bottom: 2rem;
   }
   .container {
     padding-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     border-radius: 5px;
     background-color: lightgrey;
     padding: 40px;
@@ -345,6 +360,7 @@ nav a:hover{
     width: 250px;
   }
   .slider-sector{
+    padding-top: 2rem;
     padding-bottom: 2rem;
     background-image: linear-gradient(to top,#05242e70, white);
   }
