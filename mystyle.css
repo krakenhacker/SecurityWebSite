@@ -65,6 +65,29 @@ nav a{
 nav a:hover{
     color: #107796;
 }
+.firstbanner{
+  padding-top: 2rem;
+  background-color: rgb(230, 231, 233);
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  height: 800px;
+}
+.imagetexthover {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.firstbanner img{
+  width: 100%;
+  min-height: 500px;
+  max-height: 800px;
+  object-fit: cover;
+
+
+
+}
 #services{
   padding-top: 1.5rem;
   padding-bottom: 2rem;
