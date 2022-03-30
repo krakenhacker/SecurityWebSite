@@ -92,14 +92,14 @@ nav a:hover{
     border-radius: 4%;
     background-color: rgba(255, 187, 0, 0.158);
 }
-.firstbanner{
+/* .firstbanner{
   padding-top: 1.75rem;
   background-color: rgb(230, 231, 233);
   position: relative;
   text-align: center;
   color: rgb(0, 0, 0);
   height: 800px;
-}
+} */
 .imagetexthover {
   color: white;
   text-align: center;
@@ -109,12 +109,12 @@ nav a:hover{
   width: 80%;
   transform: translate(-50%, -50%);
 }
-.firstbanner img{
+/* .firstbanner img{
   width: 100%;
   min-height: 500px;
   max-height: 750px;
   object-fit: cover;
-}
+} */
 .carousel button{
  padding: 1.3em 3em;
  font-size: 12px;
@@ -195,7 +195,8 @@ nav a:hover{
   width: 100%;
   height: auto;
   min-height: 400px;
-  max-height: 700px;
+  max-height: 706px;
+  object-fit: fill;
   border: #0000001f 2px solid;
   }
   .carousel-inner video {
@@ -205,9 +206,9 @@ nav a:hover{
     height: auto;
     min-height: 400px;
     max-height: 700px;
-    border: #0000001f 2px solid;
     object-fit: fill;
     filter:brightness(50%);
+    border: #0000001f 2px solid;
   }
   .about-us{
     padding-top: 3rem;
