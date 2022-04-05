@@ -410,3 +410,12 @@ nav a:hover{
     background-image: linear-gradient(to top,#05242e70, #f1f1f1f1);
   }
   
+.modal-body img{
+  margin: 1rem 0rem 3rem 0rem;
+  border-radius: 3% 15%;
+  width: 100%;
+  transition:ease-in-out 0.5s;
+}
+.modal-body img:hover{
+  transform:scale(1.1,1.1);
+}
