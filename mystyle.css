@@ -21,6 +21,10 @@ body{
   }
 }
 @media only screen and (max-width: 650px) {
+  .about-us p{
+    font-size: small;
+    text-align: left;
+  }
   .carousel-item *{
     font-size:medium;
   }
@@ -233,6 +237,11 @@ nav a:hover{
   .about-us h1{
     font-size: 50px;
     color: rgba(34, 23, 0, 0.938);
+  }
+  .about-us p{
+    padding: 0rem 0.5rem;
+    margin: 0.5rem 0rem;
+    
   }
   .footercontainer{
     background-image: linear-gradient(to top,#000000, #05242ed3);
