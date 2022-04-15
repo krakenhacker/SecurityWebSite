@@ -1,0 +1,131 @@
+.mainbaner{
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f0f0f0;
+}
+@media screen and (max-width: 767px) {
+    #mainbanerheader{
+        font-size: 32px !important;
+    }
+    #mainbanertext{
+        font-size: 18px !important;
+    }
+    .mainbaner{
+        background-position: top;
+        background-image: url(images/sk_cam_plus_m1@1x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mainbaner{
+        background-position: top;
+        background-image: url(images/sk_cam_plus_m1@1x.jpg);
+    }
+}
+@media (min-width: 992px) {
+    .mainbaner{
+        background-image: url(images/sk_cam_plus_xl@1x.jpg);
+    }
+}
+@media (min-width: 1200px) {
+    .mainbaner {
+        background-image: url(images/sk_cam_plus_xl@1x.jpg);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+.animated2 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+.animated3 {
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+#mainbanerheader{
+    font-family: Roboto Light,sans-serif;
+    margin: 0;
+    padding-top: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 52px;
+}
+#mainbanertext{
+    font-family: Roboto Light,sans-serif;
+    margin: 0;
+    padding-top: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+button{
+margin: 0.5rem;
+    position: absolute;
+}
+.for{
+    background-color: #f0f0f0;
+}
+.headerfor{
+    padding: 5rem 0 5rem 0;
+    text-align: center;
+    font-family: Roboto Medium,sans-serif;
+    font-size: 48px;
+}
+h1{
+    margin:0;
+}
+.col-md-2{
+    text-align: center;
+    padding: 2rem;
+}
+.col-md-2 p, .col-lg-2 i{
+    padding: 1rem;
+}
