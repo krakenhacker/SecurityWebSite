@@ -22,3 +22,9 @@
     }
 
   }
+
+  function changeClass(){
+      document.getElementById('navtogglerjs').className = "navbar-toggler collapsed";
+      document.getElementById('navtogglerjs').setAttribute("aria-expanded", "false");
+      document.getElementById('navbarSupportedContent').className = "navbar-collapse collapse";
+  }
