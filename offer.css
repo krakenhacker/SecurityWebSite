@@ -251,3 +251,52 @@ img {
     transform: translate(-50%, -50%);
     text-shadow: 4px 4px 20px rgba(255,255,255,255);
 }
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display:table-column-group;
+}
+
+input[type=submit] {
+    background-color: #109796;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    float: left;
+}
+
+input[type=submit]:hover {
+    background-color: #107796;
+}
+textarea[name=comment]{
+    resize: none;
+}

@@ -26,7 +26,7 @@
     <p id="mainbanertext">Σύστημα ασφαλείας με οπτικές επαληθεύσεις συναγερμού και υποστήριξη LTE</p>
     </div>
     <a href="#" class="animated3 animatedFadeInUp fadeInUp">
-    <button class="pricebutton center">
+    <button class="pricebutton center" data-toggle="modal" data-target="#modalcontact">
         ΜΑΘΕ ΤΙΜΗ ΤΩΡΑ
     </button>
     </a>
@@ -115,6 +115,64 @@
 </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="modalcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ζητήστε προσφορά</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="contact">
+                    <div class="container">
+                        <form class="" action="/sumbit_form.php" id="contact-form" method="GET">
+                            <div class="form-group">
+                                <label for="txtFirstName">Όνομα:</label>
+                                <input type="text" id="txtFirstName" name="firstName" minlenght="4" maxlength="18" placeholder="Όνομα*" required>
+                            </div>
+                            <!-- <div class="form-group">
+                              <label for="txtLastName">Επώνυμο:</label>
+                              <input type="text" id="txtLastName" name="lastName" minlenght="4" maxlength="18" placeholder="Επώνυμο*" required>
+                            </div> -->
+                            <div class="form-group">
+                                <label for="txtEmail">E-mail:</label>
+                                <input type="email" id="txtEmail" name="email" placeholder="Email*" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtTel">Τηλέφωνο:</label>
+                                <input type="tel" id="txtTel" name="phoneNumber" placeholder="Τηλέφωνο*" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtMessage">Αφήστε το μήνυμα σας:</label>
+                                <textarea rows="4" name="comment" id="message" placeholder="Μήνυμα"></textarea>
+                            </div>
+                            <!-- <label for="select">Επιθυμητές ώρες επικοινωνίας:</label>
+                            <div class="form-select">
+                            <select class="form-select" name="time" form="contact-form" required>
+                              <option value="" disabled selected>επιλογή ώρας επικοινωνίας*</option>
+                              <option value="9:00-12:00">9:00-12:00</option>
+                              <option value="12:00-14:00">12:00-14:00</option>
+                              <option value="18:00-21:00">18:00-21:00</option>
+                            </select>
+                            </div> -->
+                            <br>
+                            <div class="form-group">
+                                <input type="submit" name="sumbit" value="Αποστολή">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
