@@ -42,7 +42,7 @@ body{
 }
 #logoimg{
   transition: 0.5s;
-  width: 140px;
+  width: 195px;
 }
 h3{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -66,12 +66,15 @@ h3{
 nav{
     background-image: linear-gradient(to right,#052630de, #10779600);
     overflow: hidden;
-    /* padding: 2rem 2rem; */
+    padding: 0rem !important;
     transition: 0.5s;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 99;
+}
+.navbar-brand{
+  padding: 0!important;
 }
 .fa-bars {
   color: #052630de;
