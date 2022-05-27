@@ -224,15 +224,16 @@ video{
     background-color: #e0e0e0;
 }
 .row{
-    margin: 1rem;
+    margin: 1rem 1rem 0rem 1rem;
 }
 .col-lg-6 {
 margin: 1rem 0rem 1rem 0rem;
+    padding-bottom: 1rem;
 }
 .col-lg-6:hover{
     filter: blur(0px);
 }
-img {
+.col-lg-6 img {
     filter: brightness(50%);
     margin: 1rem;
     border-radius: 5%;
@@ -299,4 +300,35 @@ input[type=submit]:hover {
 }
 textarea[name=comment]{
     resize: none;
+}
+.footercontainer{
+    background-image: linear-gradient(to top,#000000, #05242ed3);
+    padding-top: 1rem;
+}
+.footercontainer .col-md-6,.footercontainer .col-md-4,.footercontainer .col-md-6 p{
+    text-align: center;
+    color: whitesmoke;
+
+}
+#mapfooter{
+    background-image: url(images/map_footer.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    position: relative;
+    background-position: center center;
+}
+
+#footerlogo{
+    width: 190px;
+    margin-bottom: 1rem;
+}
+#copyright {
+    background-color: black;
+    position: static;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
 }
