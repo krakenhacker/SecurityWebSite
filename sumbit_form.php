@@ -8,10 +8,10 @@
     // $time = $_GET['time'];
     $subject = "Michailidis Alarm Systems";
     $subject2 = "Michailidis Alarm Systems - Αντιγραφο";
-    $message = $firstName . " " . "τηλέφωνο: " . $phoneNumber . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
-    $message2 = "Αντίγραφο του e-mail σας" . $firstName . " " . " " . $phoneNumber . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
+    $message = $firstName . " " . "τηλέφωνο: " . $phoneNumber . "\n" . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
+    $message2 = "Αντίγραφο του e-mail σας" . " " .  $firstName . " " . " " . $phoneNumber . "\n" . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
 
-    $headers = "From:" . $from;
+    $headers = "From:Michailidis-alarms.gr <info@michailidis-alarms.gr>";
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
