@@ -1,20 +1,20 @@
 <?php
     $to = "msaudio@otenet.gr"; // this is your Email address
-    $from = $_GET['email']; // this is the sender's Email address
-    $firstName = $_GET['firstName'];
+    $from = $_POST['email']; // this is the sender's Email address
+    $firstName = $_POST['firstName'];
     // $lastName = $_GET['lastName'];
-    $phoneNumber = $_GET['phoneNumber'];
-    $comment = $_GET['comment'];
+    $phoneNumber = $_POST['phoneNumber'];
+    $comment = $_POST['comment'];
     // $time = $_GET['time'];
     $subject = "Michailidis Alarm Systems";
     $subject2 = "Michailidis Alarm Systems - Αντιγραφο";
     $message = $firstName . " " . "τηλέφωνο: " . $phoneNumber . "\n" . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
     $message2 = "Αντίγραφο του e-mail σας" . " " .  $firstName . " " . " " . $phoneNumber . "\n" . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
 
-    $headers = "From:Michailidis-alarms.gr <info@michailidis-alarms.gr>";
+    $headers = "From:Michailidis-alarms.gr <info@michailidis-alarms.gr>\r\n";
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    mail($from,$subject2,$message2,$headers); // sends a copy of the message to the sender
     // echo "Mail Sent. Thank you " . $firstName . ", we will contact you shortly.";
      header("Refresh:10; url=index.html"); 
     // You can also use header('Location: thank_you.php'); to redirect to another page.
