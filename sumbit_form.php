@@ -8,11 +8,15 @@
     // $time = $_GET['time'];
     $subject = "Michailidis Alarm Systems";
     $subject2 = "Michailidis Alarm Systems - Αντιγραφο";
-    $message = $firstName . " " . "τηλέφωνο: " . $phoneNumber . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
-    $message2 = "Αντίγραφο του e-mail σας" . $firstName . " " . " " . $phoneNumber . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
+    $message = $firstName . " " . "τηλέφωνο: " . $phoneNumber . " Μήνυμα:" . "\n\n" . $comment . "\n\n";
+    $message2 = "Αντίγραφο του e-mail σας" . " "  . $firstName . " " . " " . $phoneNumber ."\n" " Μήνυμα:" . "\n\n" . $comment . "\n\n";
 
-    $headers = "From:" . $from;
+    $headers = "From: Michailidis alarms <info@michailidis-alarms.gr>"."\n";
+    $headers .= 'MIME-Version: 1.0' . "\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     $headers2 = "From:" . $to;
+    $headers2 .= 'MIME-Version: 1.0' . "\n";
+    $headers2 .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     // echo "Mail Sent. Thank you " . $firstName . ", we will contact you shortly.";
