@@ -1,0 +1,203 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+body{
+    overflow-x: hidden;
+}
+.fa-bars {
+    color: #052630de;
+    font-size: 30px;
+}
+@media screen and (max-width: 1350px){
+    #scrolltotop{
+        display:none !important;
+    }
+}
+#scrolltotop{
+    background-color: #e6e6e6;
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: none;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+#scrolltotop:hover{
+    opacity: 1;
+}
+#logoimg{
+    transition: 0.5s;
+    width: 195px;
+}
+nav{
+    background-color: #444444;
+    background-image: linear-gradient(to right,#052630de, #10779600);
+    overflow: hidden;
+    padding: 0 1rem 0 0 !important;
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+.navbar-brand{
+    padding: 0!important;
+}
+
+nav a{
+    font-size: large;
+    color: #109796;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition: ease-in-out 0.5s;
+
+}
+nav a:hover{
+    /* color: #107796; */
+    color: white;
+    /* background-image: linear-gradient(to left,#052630de, #9682101e); */
+    border-radius: 4%;
+    background-color: rgba(255, 187, 0, 0.158);
+}
+
+.mainbaner{
+    height: 350px;
+    width: 100%;
+}
+.mainbaner h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.mainbaner img{
+    filter: brightness(50%);
+//    filter: grayscale(100%);
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+
+}
+
+.imagetexthover {
+    font-family: Roboto Medium,sans-serif;
+    filter: none!important;
+    color: white;
+    font-size: large;
+    text-align: left;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 30px rgba(255,255,255,255);
+}
+.mainsector .col-md-8{
+    margin: 1rem 0 1rem 0;
+}
+.mainsector img{
+    filter: brightness(150%);
+}
+.mainsector .col-md-8 img{
+    max-width: 90%;
+    padding: 1rem 0 1rem 0;
+    max-height: 400px;
+}
+.mainsector .center{
+    text-align: center;
+}
+.mainsector h1{
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mainsector p{
+    color: #444444;
+    text-align: justify;
+    padding: 0 2rem 0 2rem;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+hr{
+    border: 0;
+    border-top: 1px dotted #ddd;
+}
+
+.mainaboutus .col-md-3 , .col-md-6{
+    margin: 0 3rem 0 3rem;
+}
+.mainaboutus h1{
+    color: #222222;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mainaboutus p{
+    color: #444444;
+    text-align: left;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+.mainaboutus ul{
+    list-style: none;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+}
+.mainaboutus li{
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    background-color: #f3f3f3;
+}
+.mainaboutus h2{
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.mainaboutus li i{
+    position: relative;
+    padding: 1rem;
+    font-size: 42px;
+}
+.mainaboutus li p{
+    padding: 0 1rem 0 1rem;
+    text-align: left;
+}
+.footercontainer{
+    margin-top: 2rem;
+    background-image: linear-gradient(to top,#000000, #05242ed3);
+    padding-top: 1rem;
+}
+.footercontainer .col-md-6,.footercontainer .col-md-4,.footercontainer .col-md-6 p{
+    text-align: center;
+    color: whitesmoke;
+
+}
+#mapfooter{
+    background-image: url(images/map_footer.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    position: relative;
+    background-position: center center;
+}
+
+#footerlogo{
+    width: 190px;
+    margin-bottom: 1rem;
+}
+#copyright {
+    background-color: black;
+    position: static;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+}

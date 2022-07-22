@@ -1,5 +1,5 @@
 <?php
-    $to = "george.sot@windowslive.com"; // this is your Email address
+    $to = "msaudio@otenet.gr"; // this is your Email address
     $from = $_GET['email']; // this is the sender's Email address
     $firstName = $_GET['firstName'];
     // $lastName = $_GET['lastName'];

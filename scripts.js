@@ -13,7 +13,7 @@
       document.getElementById("logoimg").style.width = "100px";
      
     } else {
-       document.getElementById("logoimg").style.width = "195px";
+        document.getElementById("logoimg").style.width = "195px";
        document.getElementById("scrolltotop").style.display = "none";
        document.getElementById("navbar").style.paddingLeft = "1rem";
        document.getElementById("navbar").style.paddingTop = "0.5rem";
