@@ -8,13 +8,13 @@
     // $time = $_GET['time'];
     $subject = "Michailidis Alarm Systems";
     $subject2 = "Michailidis Alarm Systems - Αντιγραφο";
-    $message = $firstName . " " . "τηλέφωνο: " . $phoneNumber . "\n" . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
-    $message2 = "Αντίγραφο του e-mail σας" . " " .  $firstName . " " . " " . $phoneNumber . "\n" . " Μήνυμα:" . "\n\n" . $comment . "\n\n" . "ωρα επικοινωνίας:";
+    $message = $firstName . " " . "τηλέφωνο: " . $phoneNumber . "\n" . " Μήνυμα:" . "\n\n" . $comment;
+    $message2 = "Αντίγραφο του e-mail σας" . " " .  $firstName . " " . " " . $phoneNumber . "\n" . " Μήνυμα:" . "\n\n" . $comment;
 
-    $headers = "From:Michailidis-alarms.gr <info@michailidis-alarms.gr>\r\n";
+    $headers = "From:Michailidis-alarms.gr <info@michailidis-alarms.gr>";
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers); // sends a copy of the message to the sender
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     // echo "Mail Sent. Thank you " . $firstName . ", we will contact you shortly.";
      header("Refresh:10; url=index.html"); 
     // You can also use header('Location: thank_you.php'); to redirect to another page.
